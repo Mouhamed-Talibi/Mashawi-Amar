@@ -1,0 +1,132 @@
+/* start root */
+    :root {
+        --main-color: #d36d0e;
+    }
+/* end root */
+
+/* start global rules */
+    body {
+        font-family: "Jost", serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+/* end global rules */
+
+/* start navbar */
+    .nav-item .nav-link:hover {
+        border-bottom: 1px solid var(--main-color);
+        font-weight: 500;
+        line-height: 1.7;
+    }
+
+    .navbar-toggler {
+        background-color: wheat;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color: var(--main-color);
+        color: white;
+        font-weight: 400;
+    }
+
+    .login:hover {
+        border-left: 2px solid var(--main-color);
+        padding: 6px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .signup {
+        background-color: var(--main-color);
+    }
+
+    .signup:hover {
+        font-weight: 400;
+        background-color: rgb(151, 90, 33);
+        padding: 4px;
+    }
+
+    @media (max-width: 991px) {
+        .sidebar {
+            backdrop-filter: blur(5px);
+            color: white;
+        }
+
+        .navbar-toggler-icon {
+            color: white;
+        }
+    
+        .btn-close {
+            color: white;
+        }
+    }
+/* end navbar */
+
+/* Start Landing Section */
+    .landing {
+        background: url("../images/restaurant.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .landing .landing-text {
+        background-color: rgba(0, 0, 0, 0.8);
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ffffff;
+        padding: 20px 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+
+        /* Animation properties */
+        opacity: 0; 
+        transform: translateY(30px); 
+        animation: fadeInUp 1s ease-out forwards; 
+    }
+
+    /* Keyframes for fade-in and slide-up effect */
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(30px); 
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0); 
+        }
+    }
+
+    .landing .landing-text h1 i {
+        font-size: 50px;
+        color: #d36d0e;
+    }
+
+    .landing .landing-text h1 b {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    .landing .landing-text p {
+        max-width: 500px;
+        line-height: 1.8;
+        font-size: 1.1rem;
+        margin: 0 auto;
+    }
+
+    .landing .landing-text a {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .landing .landing-text a:hover {
+        background-color: #d36d0e;
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(211, 109, 14, 0.5);
+    }
+/* End Landing Section */
+
