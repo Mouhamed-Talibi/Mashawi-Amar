@@ -233,8 +233,7 @@
 
 /* start location and contact */
     .location h2 {
-        color: var(--main-color);
-        border-left: 2px solid black;
+        border-left: 2px solid var(--main-color);
     }
 
     .contact h2 {
@@ -243,34 +242,26 @@
 /* end location and contact */
 
 /* start footer */
-    .footer {
-        background: linear-gradient(180deg, #1b1b1b 0%, #000000 100%);
+    footer .container .heading {
+        font-size: 30px;
+        border-bottom: 2px solid var(--main-color);
+        width: 200px;
+        padding: 10px;
+        margin-bottom: 10px;
     }
 
-    /* Text color adjustments */
-    .footer p, .footer ul li a {
-        color: rgba(255, 255, 255, 0.8);
+    footer .container .links li a:hover {
+        font-size: 15px;
+        color: #a77e59;
+        padding-left: 10px;
+        border-radius: 5px;
     }
 
-    /* Social media hover effects */
-    .footer .social-icons a {
+    footer .social-icons a:hover {
+        padding: 15px;
+        background-color: var(--main-color);
+        border-radius: 500px;
         font-size: 20px;
-        transition: color 0.3s ease;
-    }
-
-    .footer .social-icons a:hover {
-        color: #f39c12;
-    }
-
-    /* Divider styling */
-    .footer hr {
-        border-color: rgba(255, 255, 255, 0.3);
-    }
-
-    /* Link hover effect */
-    .footer ul li a:hover {
-        text-decoration: underline;
-        color: #f39c12;
     }
 /* end footer */
 
