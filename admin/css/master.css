@@ -103,3 +103,44 @@
         line-height: 1.5;
     }
 /* end messages */
+
+/* start profile */
+    .profile .user-infos .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .profile .user-infos .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styling the Links for Editing */
+    .profile .d-flex a {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+
+    .profile .d-flex a:hover {
+        opacity: 0.8;
+    }
+
+    .profile .btn-outline-primary {
+        color: #007bff;
+        border-color: #007bff;
+    }
+
+    .profile .btn-outline-primary:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    .profile .btn-outline-secondary {
+        color: #6c757d;
+        border-color: #6c757d;
+    }
+
+    .profile .btn-outline-secondary:hover {
+        background-color: #6c757d;
+        color: #fff;
+    }
+/* end profile */

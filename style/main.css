@@ -241,6 +241,19 @@
     }
 /* end location and contact */
 
+/* start food */
+    .card {
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card a:hover {
+        background-color: #f39c12;
+        transform: translateY(-5px);
+    }
+/* end food */
+
 /* start footer */
     footer .container .heading {
         font-size: 30px;
